@@ -1,0 +1,29 @@
+{
+  "inbounds": [
+     {
+        "port": 9999,
+        "listen": "127.0.0.1",
+        "protocol": "vmess",
+        "settings": {
+            "clients": [
+               {
+                  "id": "xxxxxx与树莓网关的UUID相同xxxxxxxxxx",
+                  "alterId": 64
+               }
+            ]
+         },
+         "streamSettings": {
+             "network": "ws",
+             "wsSettings": {
+             "path": "/v2rayproxy"
+             }
+         }
+     }
+  ],
+  "outbounds": [
+     {
+        "protocol": "freedom",
+        "settings": {}
+     }
+  ]
+}
