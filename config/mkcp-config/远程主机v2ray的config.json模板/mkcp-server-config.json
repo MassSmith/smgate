@@ -1,0 +1,63 @@
+{
+  "inbounds": [
+    {
+       "port": xx与树莓网关端口相同xx,
+       "protocol": "vmess",
+       "settings": {
+           "clients": [
+              {
+                 "id": "xxx与树莓网关UUID相同xxxxx",
+                 "alterId": 64
+              }
+          ],
+       "detour": {        
+           "to": "dynamicPort"   
+        }
+      },
+      "streamSettings": {
+          "network": "mkcp",
+          "kcpSettings": {
+              "uplinkCapacity": 100,
+              "downlinkCapacity": 100,
+              "congestion": true,
+              "header": {
+                  "type": "none"
+              }
+          }
+      }
+    },
+   {
+      "protocol": "vmess",
+      "port": "10000-20000",
+      "tag": "dynamicPort",       
+      "settings": {
+          "default": {
+              "level": 1,
+              "alterId": 64
+        }
+      },
+      "allocate": {
+          "strategy": "random", 
+          "concurrency": 2, 
+          "refresh": 3  
+      },
+      "streamSettings": {
+          "network": "mkcp",
+          "kcpSettings": {
+              "uplinkCapacity": 100,
+              "downlinkCapacity": 100,
+              "congestion": true,
+              "header": {
+                  "type": "none"
+              }
+          }
+      }
+    }
+  ],
+  "outbounds": [
+     {
+        "protocol": "freedom",
+        "settings": {}
+     }
+  ]
+}
