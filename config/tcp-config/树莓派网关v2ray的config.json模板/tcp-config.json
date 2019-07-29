@@ -1,0 +1,114 @@
+{
+	"inbounds": [
+		{
+			"port": 12345,
+			"protocol": "dokodemo-door",
+			"settings": {
+				"network": "tcp,udp",
+				"followRedirect": true
+			}
+		},
+		{
+			"tag": "dns-in",
+			"protocol": "dokodemo-door",
+			"port": 53,
+			"settings": {
+				"address": "8.8.8.8",
+				"port": 53,
+				"network": "udp",
+				"followRedirect": false
+			}
+		}
+	],
+	"outbounds": [
+		{
+			"tag": "proxy",
+			"protocol": "vmess",
+			"settings": {
+				"vnext": [
+					{
+						"address": "xxxxx服务器的IP或域名xxxxxx",
+						"port": xx与服务器的端口相同xx,
+						"users": [
+							{
+								"id": "xxxxx与服务端的UUID相同xxxxxxx",
+								"alterId": 64,
+								"security": "auto"
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+			"network": "tcp",
+				"sockopt": {
+					"mark": 255
+				}
+			},
+			"mux": {
+				"enabled": true
+			}
+		},
+		{
+			"tag": "direct",
+			"protocol": "freedom",
+			"settings": {},
+			"streamSettings": {
+				"sockopt": {
+					"mark": 255
+				}
+			}
+		},
+		{
+			"protocol": "dns",
+			"tag": "dns-out"
+		}
+	],
+	"dns": {
+		"servers": [
+			"8.8.8.8",
+			{
+				"address": "114.114.114.114",
+				"port": 53,
+				"domains": [
+					"geosite:cn",
+					"geosite:speedtest"
+				]
+			}
+		]
+	},
+	"routing": {
+		"domainStrategy": "IPIfNonMatch",
+		"rules": [
+			{
+				"type": "field",
+				"inboundTag": [
+					"dns-in"
+				],
+				"outboundTag": "dns-out"
+			},
+			{
+				"type": "field",
+				"outboundTag": "direct",
+				"ip": [
+					"geoip:private"
+				]
+			},
+			{
+				"type": "field",
+				"outboundTag": "direct",
+				"ip": [
+					"geoip:cn"
+				]
+			},
+			{
+				"type": "field",
+				"outboundTag": "direct",
+				"domain": [
+					"geosite:cn",
+					"geosite:speedtest"
+				]
+			}
+		]
+	}
+}
