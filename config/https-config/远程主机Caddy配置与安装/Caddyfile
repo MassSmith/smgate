@@ -1,0 +1,9 @@
+xxx.xxx.xxx {
+  log /var/log/caddy/caddy.log
+  root /var/www
+  tls xxxx@xxxx.xxx
+  proxy /v2rayproxy localhost:9999 {
+    websocket
+    header_upstream -Origin
+  }
+}

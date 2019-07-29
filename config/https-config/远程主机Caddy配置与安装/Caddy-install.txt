@@ -1,0 +1,28 @@
+﻿sudo apt-get autoremove --purge apache2  //如果有安装apache2
+sudo apt update
+wget https://getcaddy.com -O getcaddy
+sudo chmod +x getcaddy
+
+sudo ./getcaddy personal http.ipfilter,http.ratelimit,http.cache,hook.service
+
+sudo mkdir -p /etc/caddy
+sudo mkdir -p /var/log/caddy
+sudo mkdir -p /var/www
+
+sudo nano /etc/caddy/Caddyfile
+
+------------------------------------
+xxx.xxx.xxx {
+  log /var/log/caddy/caddy.log
+  root /var/www
+  tls xxxx@xxxx.xxx
+  proxy /v2rayproxy localhost:9999 {
+    websocket
+    header_upstream -Origin
+  }
+}
+
+-----------------------------------------
+
+更换为自己的域名，并提前10分钟解析到服务器的IP。
+ tls xxxx@xxxx.xxx  这里更换为自己的邮箱，不用是真实的。
