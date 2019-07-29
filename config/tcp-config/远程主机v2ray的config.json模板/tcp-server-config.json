@@ -1,0 +1,22 @@
+{
+  "inbounds": [
+         {
+        "port": xx与树莓的端口相同xx,
+        "protocol": "vmess",
+        "settings": {
+            "clients": [
+               {
+                  "id": "xxxxxxxxxxx与树莓网关UUID相同xxxxxxxxxxx",
+                  "alterId": 64
+               }
+            ]
+         }
+     }
+  ],
+  "outbounds": [
+     {
+        "protocol": "freedom",
+        "settings": {}
+     }
+  ]
+}
