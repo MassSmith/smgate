@@ -14,8 +14,13 @@ https://github.com/MassSmith/smgate/wiki
 https://raw.githubusercontent.com/MassSmith/smgate/master/v2raygate.imz
 
 镜像使用方法：
+
 1。写入到TF卡。
+
 2。TF卡插入树莓派，用网线与路由器连接好。路由器能正常联网。
+
 3。进入路由器，设置LAN口IP地址为：192.168.99.1。关闭LAN口的DHCP功能。
+
 4。启动树莓派。连接路由器。即可。
+
 5。镜像内自带一个v2ray节点，使用https+ws，仅供参考与测试用，不做任何保证。随时可能关闭或被封掉。正常使用，请更换为自己的v2ray节点。
