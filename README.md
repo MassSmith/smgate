@@ -21,6 +21,6 @@ https://raw.githubusercontent.com/MassSmith/smgate/master/v2raygate.imz
 
 3。进入路由器，设置LAN口IP地址为：192.168.99.1。关闭LAN口的DHCP功能。
 
-4。启动树莓派。连接路由器。即可。
+4。启动树莓派。其它设备连接路由器。即可。
 
 5。镜像内自带一个v2ray节点，使用https+ws，仅供参考与测试用，不做任何保证。随时可能关闭或被封掉。正常使用，请更换为自己的v2ray节点。
