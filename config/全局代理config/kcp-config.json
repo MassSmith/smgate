@@ -1,0 +1,65 @@
+{
+  "inbounds":[
+    {
+      "port":12345,
+      "protocol":"dokodemo-door",
+      "settings":{
+        "network":"tcp,udp",
+        "followRedirect":true
+      }
+    },
+    {
+      "protocol":"dokodemo-door",
+      "port":53,
+      "settings":{
+        "address":"8.8.8.8",
+        "port":53,
+        "network":"udp",
+        "timeout":0,
+        "followRedirect":false
+      }
+    }
+  ],
+  "outbounds":[
+   {
+			"protocol": "vmess",
+			"settings": {
+				"vnext": [
+					{
+						"address": "xxxxxx服务端的IP或域名xxxxxxxxx",
+						"port": xx服务器的端口xx,
+						"users": [
+							{
+								"id": "xxxxxxxxxxxxx服务端的UUIDxxxxxxxx",
+								"alterId": 64,
+								"security": "auto"
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "kcp",
+				"kcpSettings": {
+					"mtu": 1350,
+					"tti": 50,
+					"uplinkCapacity": 5,
+					"downlinkCapacity": 100,
+					"congestion": true,
+					"readBufferSize": 2,
+					"writeBufferSize": 2,
+					"header": {
+						"type": "none"
+					}
+				}
+			},
+			"sockopt": {
+				"mark": 255
+			},
+			"mux": {
+				"enabled": true
+			}
+		}
+		
+  ]
+}
