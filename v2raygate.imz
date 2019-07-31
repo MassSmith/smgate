@@ -1,5 +1,6 @@
 
 文件太大，这里放不下。移到Google云盘。
+用putty登录系统，修改v2ray节点。
 下载地址：
 https://drive.google.com/uc?id=1pSaVLRq0UJdC5tg9anU88abaUjIvB1QG
 
@@ -8,4 +9,11 @@ https://drive.google.com/uc?id=1pSaVLRq0UJdC5tg9anU88abaUjIvB1QG
 密码：raspberry
 
 账户名：root
+密码：raspberry99
+
+以下的系统镜像集成了Webmin。
+
+https://drive.google.com/uc?id=1fNuH2LTxWv8hBnEthbZ5PcuveWnafTu1
+登录网址：http://192.168.99.2:10000
+登录账户名：root
 密码：raspberry99
