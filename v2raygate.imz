@@ -11,6 +11,18 @@ https://drive.google.com/uc?id=1pSaVLRq0UJdC5tg9anU88abaUjIvB1QG
 账户名：root
 密码：raspberry99
 
+集成了V2ray.Fun.移植自V2ray.Fun.定制为专用于树莓派网关。感谢V2ray.Fun.https://github.com/FunctionClub/V2ray.Fun
+下载地址：
+https://drive.google.com/uc?id=1d9xxEc2S1u1zYmT7_YZx57G_dKinRcpu
+http://192.168.99.2:10000
+root
+raspberry99
+
+SSH
+192.168.99.2:22
+root
+raspberry99
+
 以下的系统镜像集成了Webmin。
 
 https://drive.google.com/uc?id=1fNuH2LTxWv8hBnEthbZ5PcuveWnafTu1
