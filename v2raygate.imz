@@ -23,9 +23,3 @@ SSH
 root
 raspberry99
 
-以下的系统镜像集成了Webmin。
-
-https://drive.google.com/uc?id=1fNuH2LTxWv8hBnEthbZ5PcuveWnafTu1
-登录网址：http://192.168.99.2:10000
-登录账户名：root
-密码：raspberry99
