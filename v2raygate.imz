@@ -17,10 +17,13 @@ https://drive.google.com/uc?id=1pSaVLRq0UJdC5tg9anU88abaUjIvB1QG
 集成了V2ray.Fun.移植自V2ray.Fun.定制为专用于树莓派网关。感谢V2ray.Fun.https://github.com/FunctionClub/V2ray.Fun
 下载地址：
 https://drive.google.com/uc?id=1d9xxEc2S1u1zYmT7_YZx57G_dKinRcpu
+
+浏览器登录地址：
 http://192.168.99.2:10000
 root
 raspberry99
 
+putty登录：
 SSH
 192.168.99.2:22
 root
