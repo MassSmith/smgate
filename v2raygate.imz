@@ -1,5 +1,6 @@
 
 文件太大，这里放不下。移到Google云盘。
+----------------------------------------------------------------------
 用putty登录系统，修改v2ray节点。
 下载地址：
 https://drive.google.com/uc?id=1pSaVLRq0UJdC5tg9anU88abaUjIvB1QG
@@ -10,6 +11,8 @@ https://drive.google.com/uc?id=1pSaVLRq0UJdC5tg9anU88abaUjIvB1QG
 
 账户名：root
 密码：raspberry99
+
+---------------------------------------------------------------------------
 
 集成了V2ray.Fun.移植自V2ray.Fun.定制为专用于树莓派网关。感谢V2ray.Fun.https://github.com/FunctionClub/V2ray.Fun
 下载地址：
