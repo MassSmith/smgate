@@ -23,4 +23,10 @@ https://raw.githubusercontent.com/MassSmith/smgate/master/v2raygate.imz
 
 4。启动树莓派，重新启动路由器。其它设备连接路由器。即可。
 
-5。镜像内自带一个v2ray节点，使用https+ws，仅供参考与测试用，不做任何保证。随时可能关闭或被封掉。正常使用，请更换为自己的v2ray节点。
+5。镜像内自带一个v2ray节点，仅供参考与测试用，不做任何保证。随时可能关闭或被封掉。正常使用，请更换为自己的v2ray节点。
+
+镜像说明：
+
+两个镜像，一个是debian 8。修改节点需要Putty。适合于有一定linux操作基础的。
+
+另一个是以debian 9制作，集成了V2ray.Fun（项目地址：https://github.com/FunctionClub/V2ray.Fun ）原项目是用于远程服务端，于是做了修改，专用于树莓派网关。感谢V2ray.Fun的作者。
