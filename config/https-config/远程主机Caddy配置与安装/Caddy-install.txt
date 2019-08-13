@@ -26,3 +26,17 @@ xxx.xxx.xxx {
 
 更换为自己的域名，并提前10分钟解析到服务器的IP。
  tls xxxx@xxxx.xxx  这里更换为自己的邮箱，不用是真实的。
+ caddy -service install -agree -email xxxx@xxxx.xxx -conf /etc/caddy/Caddyfile
+
+caddy -service start
+
+ 卸载Caddy服务：
+caddy -service uninstall
+启动Caddy服务：
+caddy -service start
+停止凯蒂服务：
+caddy -service stop
+重启Caddy服务：
+caddy -service restart
+
+systemctl daemon-reload
