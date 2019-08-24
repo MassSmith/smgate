@@ -34,3 +34,12 @@ SSH
 root
 raspberry99
 
+节点信息：
+
+domain:w1.test699.tk
+websocket port:443
+ws Path:/v2rayproxy
+
+mkcp port:12592
+tcp port：14797
+
