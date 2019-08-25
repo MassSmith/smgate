@@ -28,6 +28,4 @@ https://raw.githubusercontent.com/MassSmith/smgate/master/v2raygate.imz
 
 镜像说明：
 
-两个镜像，一个是debian 8。修改节点需要Putty。适合于有一定linux操作基础的。
-
-另一个是以debian 9制作，集成了V2ray.Fun（项目地址：https://github.com/FunctionClub/V2ray.Fun ）可用web网页进行修改v2ray节点。原项目是用于远程服务端，于是做了修改，专用于树莓派网关。感谢V2ray.Fun的作者。
+以debian 9制作，集成了V2ray.Fun（项目地址：https://github.com/FunctionClub/V2ray.Fun ）可用web网页进行修改v2ray节点。原项目是用于远程服务端，于是做了修改，专用于树莓派网关。感谢V2ray.Fun的作者。
