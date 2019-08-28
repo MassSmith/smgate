@@ -43,6 +43,6 @@ https://raw.githubusercontent.com/MassSmith/smgate/master/v2raygate.imz
 
 zip -P 999999999 subscribe.list.zip subscribe.list
 
-https://github.com/MassSmith/test/raw/master/subscribe.list.zip
+https://github.com/MassSmith/smgate/raw/master/subscribe.list.zip
 
 验证码：999999999
