@@ -29,3 +29,11 @@ https://raw.githubusercontent.com/MassSmith/smgate/master/v2raygate.imz
 镜像说明：
 
 以debian 9制作，集成了V2ray.Fun（项目地址：https://github.com/FunctionClub/V2ray.Fun ）可用web网页进行修改v2ray节点。原项目是用于远程服务端，于是做了修改，专用于树莓派网关。感谢V2ray.Fun的作者。
+
+镜像运行WEB界面：
+
+![1.png](1.png)
+
+![2.png](2.png)
+
+![3.png](3.png)
