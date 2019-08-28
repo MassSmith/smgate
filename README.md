@@ -37,3 +37,12 @@ https://raw.githubusercontent.com/MassSmith/smgate/master/v2raygate.imz
 ![2.png](2.png)
 
 ![3.png](3.png)
+
+******************************************添加订阅的格式文件************************************
+以下linux系统中操作命令，windows可使用Zip软件：
+
+zip -P 999999999 subscribe.list.zip subscribe.list
+
+https://github.com/MassSmith/test/raw/master/subscribe.list.zip
+
+验证码：999999999
