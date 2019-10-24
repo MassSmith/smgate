@@ -6,11 +6,11 @@
 下载地址：
 https://drive.google.com/uc?id=1d9xxEc2S1u1zYmT7_YZx57G_dKinRcpu
 
-smGateV2ray.Fun_1.0.imz
+smGateV2ray.Fun_1.1.imz
 设置好网关，正常运行，并可以通过WEB界面修改。增加路由模式控制，修补好kcp及WS-TLS模式。
 细化了Path显示细节，websocket自动开启TLS，其他模式自动关闭TLS。增加运行状态中显示 ，当前使用的
 路由模式。websocket自动显示当前正在使用的IP或者域名。增加列表功能，暂时最多保存10个节点，增加订阅和升级v2ray功能。
-
+优化supervisor守护进程配置，不再一直写入日志文件。
 浏览器登录地址：
 http://192.168.99.2
 root
